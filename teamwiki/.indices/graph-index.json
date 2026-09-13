@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "team-wiki.graph-index.v1",
+  "generatedAt": "2026-09-13T04:59:17.093Z",
+  "nodes": [
+    {
+      "slug": "component/package:main",
+      "type": "component",
+      "confidence": "EXTRACTED",
+      "title": "package:main",
+      "domain": "."
+    },
+    {
+      "slug": "evidence/code/meridian/index",
+      "type": "architecture",
+      "confidence": "EXTRACTED",
+      "title": "meridian code index",
+      "domain": "code-knowledge"
+    },
+    {
+      "slug": "evidence/code/meridian/component",
+      "type": "component",
+      "confidence": "EXTRACTED",
+      "title": "component",
+      "domain": "code-knowledge"
+    },
+    {
+      "slug": "evidence/code/meridian/relation-main.go",
+      "type": "component",
+      "confidence": "EXTRACTED",
+      "title": "relation-main.go",
+      "domain": "code-knowledge"
+    },
+    {
+      "slug": "evidence/code/meridian/dependency-paths",
+      "type": "component",
+      "confidence": "EXTRACTED",
+      "title": "dependency-paths",
+      "domain": "code-knowledge"
+    }
+  ],
+  "edges": [
+    {
+      "from": "evidence/code/meridian/index",
+      "to": "evidence/code/meridian/component",
+      "relation": "CONTAINS",
+      "weight": 0.6,
+      "source": "code-heuristic"
+    },
+    {
+      "from": "evidence/code/meridian/index",
+      "to": "evidence/code/meridian/relation-main.go",
+      "relation": "CONTAINS",
+      "weight": 0.6,
+      "source": "code-heuristic"
+    },
+    {
+      "from": "evidence/code/meridian/index",
+      "to": "evidence/code/meridian/dependency-paths",
+      "relation": "CONTAINS",
+      "weight": 0.6,
+      "source": "code-heuristic"
+    }
+  ]
+}
